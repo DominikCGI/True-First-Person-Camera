@@ -39,9 +39,9 @@ Example: local ToggleKey = Key.OEM_PLUS -- Change "OEM_PLUS" to e.g. "B", or "OE
 This mod is designed to be non-intrusive and compatible, but not every setup is conflict-free. Please read carefully.
 
 ## Design & Compatibility Philosophy  
-✔ **TFP does NOT edit meshes, animations, or core game files**
-✔ **Uses only runtime logic via the third-person camera system**
-✔ **Compatible with:** 
+✔ TFP does NOT edit meshes, animations, or core game files  
+✔ Uses only runtime logic via the third-person camera system  
+✔ Compatible with:  
       
     Vanilla & custom characters 
     Custom armor & body mods 
