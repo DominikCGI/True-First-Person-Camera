@@ -3,8 +3,7 @@
 ![Screenshot 1](./3468-1751754418-600251250.webp)
 
 ## What This Mod Does
-This mod adds a configurable, immersive first-person camera system by utilizing the existing third-person camera via UE4SS.  
-Play the game in true first person just like in immersive sim titles or ARMA.
+This mod adds a configurable, immersive first-person camera system by utilizing the existing third-person camera via UE4SS. Play the game in true first person just like in immersive sim titles or ARMA.
 
 **Highly Customizable:** Adjust the camera position, freelook behavior, FOV, helmet overlays, and movement to perfectly match your character’s body, race, proportions, and gear. Every character is different. This mod is designed to reflect that.
 
@@ -16,8 +15,8 @@ Play the game in true first person just like in immersive sim titles or ARMA.
 ✔ **Custom FOV** — Override the default FOV with your Custom FOV while in TFP mode.  
 ✔ **Speed Control (optional)** — Use the mouse wheel to change your walking/running speed on the fly.  
 ✔ **Easy Toggle** — Quickly enable/disable on demand using a hotkey.  
-✔ **State Persistence** — Remembers your TFP and freelook states between sessions with external `.txt` file. - No savegame files are touched.  
-✔ **No Intrusive Changes** — Does not edit meshes, animations, or core game files. - You can install/uninstall at any time.  
+✔ **State Persistence** — Remembers your TFP and freelook states between sessions with external `.txt` file.  
+✔ **No Intrusive Changes** — Does not edit meshes, animations, or core game files. - Install/uninstall at any time.  
 ✔ **Fully Configurable** — Adjust camera offsets, freelook behavior, toggle keys, and more.  
 
 
@@ -31,15 +30,16 @@ This can be different depending on your keyboard layout:
 - **AZERTY**: it’s `=`
 
 **If the toggle key doesn’t work or feels awkward, you can change it!**  
-
-Open `main.lua` with any text editor (like Notepad++): 
+Open `main.lua` with any text editor (like Notepad++): (OblivionRemastered\Binaries\Win64\ue4ss\Mods\FirstPersonMod\Scripts\main.lua).
+At the top you'll find the "Configurables" section. There you can rebind the toggle key to one that works best for you. Example:
+local ToggleKey = Key.OEM_PLUS -- Change "OEM_PLUS" to e.g. "B", or "OEM_PERIOD", or any supported key name
  
 ### ⚠️ IMPORTANT: Read Before Using
 This mod is designed to be non-intrusive and compatible, but not every setup is conflict-free. Please read carefully.
 
 ## Design & Compatibility Philosophy  
 ✔ TFP does NOT edit meshes, animations, or core game files
-✔ Uses only runtime logic via the third-person camera system 
+✔ Uses only runtime logic via the third-person camera system
 ✔ Compatible with:  
       
     Vanilla & custom characters 
@@ -68,7 +68,7 @@ Rule of Thumb: Only use ONE mod at a time that alters third-person or camera beh
 Can only be activated in third-person mode  
 
 ## Requirements  
-✅ UE4SS (latest version) installed and working  
+✔ UE4SS (latest version) installed and working  
 
 ## Installation  
 1. Install UE4SS and follow setup instructions  
@@ -79,9 +79,7 @@ Can only be activated in third-person mode
 ...OblivionRemastered/Binaries/Win64/ue4ss/Mods/TFPCamera/enabled.txt  
 ...OblivionRemastered/Binaries/Win64/ue4ss/Mods/TFPCamera/tfp_state.txt  
 ...OblivionRemastered/Binaries/Win64/ue4ss/Mods/TFPCamera/freelook_state.txt
-
 ...OblivionRemastered/Content/Paks/LogicMods/TFPCamera.pak +(.ucas and .utoc)
-
 ...OblivionRemastered/Content/Paks/~mods/TFP_Animation_P.pak +(.ucas and .utoc)
 
 
