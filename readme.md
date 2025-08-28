@@ -31,16 +31,17 @@ This can be different depending on your keyboard layout:
 
 **If the toggle key doesn’t work or feels awkward, you can change it!**  
 Open `main.lua` with any text editor (like Notepad++): (OblivionRemastered\Binaries\Win64\ue4ss\Mods\FirstPersonMod\Scripts\main.lua).
-At the top you'll find the "Configurables" section. There you can rebind the toggle key to one that works best for you. Example:
-local ToggleKey = Key.OEM_PLUS -- Change "OEM_PLUS" to e.g. "B", or "OEM_PERIOD", or any supported key name
+At the top you'll find the "Configurables" section. There you can rebind the toggle key to one that works best for you. 
+
+Example: local ToggleKey = Key.OEM_PLUS -- Change "OEM_PLUS" to e.g. "B", or "OEM_PERIOD", or any supported key name
  
 ### ⚠️ IMPORTANT: Read Before Using
 This mod is designed to be non-intrusive and compatible, but not every setup is conflict-free. Please read carefully.
 
 ## Design & Compatibility Philosophy  
-✔ TFP does NOT edit meshes, animations, or core game files
-✔ Uses only runtime logic via the third-person camera system
-✔ Compatible with:  
+✔ **TFP does NOT edit meshes, animations, or core game files**
+✔ **Uses only runtime logic via the third-person camera system**
+✔ **Compatible with:** 
       
     Vanilla & custom characters 
     Custom armor & body mods 
@@ -78,8 +79,8 @@ Can only be activated in third-person mode
 ...OblivionRemastered/Binaries/Win64/ue4ss/Mods/TFPCamera/Scripts/main.lua  
 ...OblivionRemastered/Binaries/Win64/ue4ss/Mods/TFPCamera/enabled.txt  
 ...OblivionRemastered/Binaries/Win64/ue4ss/Mods/TFPCamera/tfp_state.txt  
-...OblivionRemastered/Binaries/Win64/ue4ss/Mods/TFPCamera/freelook_state.txt
-...OblivionRemastered/Content/Paks/LogicMods/TFPCamera.pak +(.ucas and .utoc)
+...OblivionRemastered/Binaries/Win64/ue4ss/Mods/TFPCamera/freelook_state.txt  
+...OblivionRemastered/Content/Paks/LogicMods/TFPCamera.pak +(.ucas and .utoc)  
 ...OblivionRemastered/Content/Paks/~mods/TFP_Animation_P.pak +(.ucas and .utoc)
 
 
